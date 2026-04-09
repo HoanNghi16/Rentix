@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { CiSearch } from "react-icons/ci";
 export default function LoginForm() {
+  //Nghi comment: sửa style padding
   return (
     <form className="w-112 h-128 bg-white p-6 bg-white rounded-2xl shadow-lg mx-auto">
       <h1 className="text-3xl font-semibold text-center tracking-wide mb-10 pt-10">
