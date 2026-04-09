@@ -1,8 +1,9 @@
+import Link from "next/link";
 import { GoOrganization } from "react-icons/go";
 
 export default function ComplexCard(){
     return (
-        <div className="shadow-lg border border-gray-300 mt-4 pb-2 rounded-md hover:shadow-2xl transition-shadow duration-300">
+        <Link href="/owner/1" className="shadow-lg border border-gray-300 mt-4 pb-2 rounded-md hover:shadow-2xl transition-shadow duration-300">
             <div className="border-b border-gray-300 flex p-2">
                 <span className="text-xs"><span className="text-gray-500">ID:</span> ascaskc âcsc</span>
             </div>
@@ -13,6 +14,6 @@ export default function ComplexCard(){
                 <p><b>Số phòng trống:</b> 10</p>
                 <p><b>Số người thuê:</b> 110</p>
             </div>
-        </div>
+        </Link>
     )
 }

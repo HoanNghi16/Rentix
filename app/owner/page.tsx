@@ -1,11 +1,10 @@
-import ComplexCard from "../components/owner/complexCard";
+import ComplexList from "../components/owner/complex/complexList";
 export default function OwnerPage(){
     const complexes = new Array(3).fill(0);
     return (
-        <div className="w-full p-8 flex flex-wrap gap-4" id="flexContainer">
-            {complexes.map((_, index) => (
-                <ComplexCard key={index} />
-            ))}
-        </div>
+        <section className="w-full">
+            <ComplexList complexes={complexes} />
+        </section>
+
     )
 }
