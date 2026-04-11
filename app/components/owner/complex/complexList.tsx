@@ -1,3 +1,4 @@
+import AddMore from "../../addMore";
 import ComplexCard from "./complexCard";
 
 export default function ComplexList({ complexes }: { complexes: Array<number> }) {
@@ -6,6 +7,7 @@ export default function ComplexList({ complexes }: { complexes: Array<number> })
             {complexes.map((_, index) => (
                 <ComplexCard key={index} />
             ))}
+            <AddMore></AddMore>
         </div>
     )
 }
